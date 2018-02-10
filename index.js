@@ -5,12 +5,13 @@ var playerListWindow = document.querySelector('.player-list-window');
 var compCityPanel = document.querySelector('.comp-city-panel');
 var compListWindow = document.querySelector('.comp-list-window');
 
+
 function restart(){
     window.location.reload() 
 } 
 function gameOver(){
     alert('Компьютер победил! Его результат: ' + compList.length);
-    $('.comp-city-panel, .player-city-panel').css('display', 'none');
+    $('.comp-city-panel, .player-city-panel, .voice-button').css('display', 'none');
     $('.list-style').css('height','178px');
 }
 

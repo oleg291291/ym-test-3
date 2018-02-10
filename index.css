@@ -3,15 +3,12 @@ body {
 }
 .full-window {
     background-color: lightskyblue;
-    padding: 20px;
-    min-width: 660px;
+
+    /*min-width: 660px;*/
 }
 #map {
     width: 600px;
     height: 350px;
-}
-.map-panel {
-    margin: 5px;
 }
 .comp-city-panel {
     text-align: center;
@@ -45,15 +42,50 @@ body {
     overflow-y:scroll;
     
 }
+/*.voice-button-container{
+    width: 20%;
+    background-color: lightskyblue;*/
+
+/*
+}*/
 .voice-button {
-    
+width: 80px;
     position:absolute; 
-    top: 0;
-    background: none;
-    border: none;
+    top: 25px;
+    right: 25px;
+    background-image: url('mic-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    background-color:white;
+    opacity: 0.3;
+
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+
 }
-.voice-button img{
+/*.voice-button img{
     height: 30px; 
     margin: 22px;
     opacity: 0.2;
+}*/
+/*.player-city-panel{
+    width: 80%;
+}*/
+
+@media (max-width: 767px){
+    #map{
+        width: 420px;
+    }
+    .voice-button{
+        top: 230px;
+        right: 25px;  
+    }
+}
+@media (max-width: 520px){
+    #map{
+        width: 375px;
+    }
 }
