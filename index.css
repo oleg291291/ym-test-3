@@ -51,8 +51,8 @@ body {
 .voice-button {
 width: 80px;
     position:absolute; 
-    top: 25px;
-    right: 25px;
+    top: 30px;
+    right: 30px;
     background-image: url('mic-icon.svg');
     background-repeat: no-repeat;
     background-position: center center;
