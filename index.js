@@ -5,7 +5,6 @@ var playerListWindow = document.querySelector('.player-list-window');
 var compCityPanel = document.querySelector('.comp-city-panel');
 var compListWindow = document.querySelector('.comp-list-window');
 
-
 function restart(){
     window.location.reload() 
 } 
