@@ -12,7 +12,7 @@ function restart(){
 function gameOver(){
     alert('Компьютер победил! Его результат: ' + compList.length);
     $('.comp-city-panel, .player-city-panel, .voice-button').css('display', 'none');
-    $('.list-style').css('height','178px');
+    $('.list-style').css('height','181px');
 }
 
 function checkList(from, cityName){
@@ -57,6 +57,7 @@ var computerInputLength = computerInputValue.length;
 }
     charForPlayer = lastCharTestValue.toUpperCase();
     alert('Ваш ход! Назовите город на букву "' + charForPlayer + '"');
+    $('.player-input').attr('placeholder', 'Введите город на "' + charForPlayer + '"');
 }
 
 
@@ -84,6 +85,7 @@ function playerLastCharFinder(playerInputValue){
 function playerInputHandler(event){
 
 event.preventDefault();
+// $('.player-input').attr('placeholder','');
 var playerInputValue = playerInput.value;
 playerInput.value = '';
 if (charForPlayer != undefined && charForPlayer != playerInputValue[0].toUpperCase()){

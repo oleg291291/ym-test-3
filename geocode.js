@@ -82,7 +82,7 @@ function getCoord(cityName, lastChar) {
                 }
                 var checkListTest = checkList('player', cityName);
                 if (checkListTest == 'error'){
-                    alert('ошибка');
+                    // alert('ошибка');
                     return;
                 }
                 alert('Игрок называет город ' + cityName);

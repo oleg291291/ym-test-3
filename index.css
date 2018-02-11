@@ -14,18 +14,18 @@ body {
     text-align: center;
     background-color: white;
     color: lightskyblue;
-    border: solid black 1px;
+    /*border: solid lightskyblue 1px;*/
     padding: 20px;
     font-size: 24px;
 }
 .list-name {
-    border-bottom: solid black 1px;
+    border-bottom: solid lightskyblue 1px;
 }
 .list-style {
     text-align: center;
     background-color: white;
     color: black;
-    border: solid black 1px;   
+    /*border: solid black 1px;   */
     font-size: 16px;
     height:100px;
     overflow-y:scroll;
@@ -34,8 +34,14 @@ body {
     width: 100%;
     height: 78px;
     font-size: 24px;
+    /*padding-left: 10%;*/
     text-align: center;
+    border: none;
     
+}
+.player-input::-webkit-input-placeholder{
+    opacity: 0.3;
+
 }
 .player-list-input {
     height:100px;
@@ -51,8 +57,8 @@ body {
 .voice-button {
 width: 80px;
     position:absolute; 
-    top: 30px;
-    right: 30px;
+    top: 31px;
+    right: 31px;
     background-image: url('mic-icon.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -80,7 +86,7 @@ width: 80px;
         width: 420px;
     }
     .voice-button{
-        top: 230px;
+        top: 228px;
         right: 25px;  
     }
 }
@@ -88,4 +94,7 @@ width: 80px;
     #map{
         width: 375px;
     }
+    .player-input::-webkit-input-placeholder{
+    font-size: 20px;
+}
 }
